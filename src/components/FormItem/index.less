@@ -1,0 +1,47 @@
+.form-item-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  .form-item-cell {
+    height: 100%;
+    &.pre-cell {
+      width: 100px;
+      text-align: center;
+    }
+    &.input-cell {
+      flex-grow: 2;
+      position: relative;
+      .clear {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9;
+        height: 100%;
+        width: 100px;
+        box-sizing: border-box;
+        &:before {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      &.min {
+        .clear {
+          right: 250px;
+        }
+        input {
+          width: calc(100% - 250px);
+        }
+      }
+    }
+    &.after-cell {
+      width: 230px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}

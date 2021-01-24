@@ -1,13 +1,13 @@
-const pkg = require('../../package.json');
+const pkg = require("../../package.json");
 
 /**
  * 日志类型
  */
 export enum LoggerType {
-  Log='LOG',
-  Info='INFO',
-  Warn='WARN',
-  Error='ERROR'
+  Log="LOG",
+  Info="INFO",
+  Warn="WARN",
+  Error="ERROR"
 }
 
 /**
@@ -24,7 +24,7 @@ export class Logger {
    * @param args        要打印的日志参数
    */
   baseLog(logType: LoggerType, ...args: any[]){
-    if(process.env.BUILD_ENV === 'production') {
+    if(process.env.BUILD_ENV === "production") {
       return;
     }
     args.unshift(`[${pkg.description}(${pkg.name}): ${this.namespace}]<${logType}> `);

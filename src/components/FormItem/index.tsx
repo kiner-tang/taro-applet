@@ -19,7 +19,7 @@ export class FormItem extends Component<FormItemProps, any>{
             {this.props.preNode}
           </View>
         )}
-        <View className={`form-item-cell input-cell${this.props.afterNode?' min':''}`}>
+        <View className={`form-item-cell input-cell${this.props.afterNode?" min":""}`}>
           {this.props.children}
           {this.props.clear && (
             <AtIcon

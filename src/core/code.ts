@@ -3,7 +3,7 @@ export enum BusinessCode {
 }
 
 
-export const wxCodeStorageKey = 'wxcode';
+export const wxCodeStorageKey = "wxcode";
 
-export const userInfoStorageKey = 'userInfoStorageKey';
+export const userInfoStorageKey = "userInfoStorageKey";
 

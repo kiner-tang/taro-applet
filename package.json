@@ -45,7 +45,8 @@
     "dev:testing:tt": "npm run build:testing:tt -- --watch",
     "dev:testing:h5": "npm run build:testing:h5 -- --watch",
     "dev:testing:rn": "npm run build:testing:rn -- --watch",
-    "dev:testing:qq": "npm run build:testing:qq -- --watch"
+    "dev:testing:qq": "npm run build:testing:qq -- --watch",
+    "eslint:fix": "eslint --fix --ext .ts --ext .tsx --ext .js src/"
   },
   "browserslist": [
     "last 3 versions",

@@ -5,6 +5,7 @@ module.exports = {
     'react/sort-comp': [0],
     'import/first': [0],
     'import/no-commonjs': [0],
-    'no-unused-vars': "warn"
+    'no-unused-vars': "warn",
+    'quotes': [2, 'double']
   }
 };

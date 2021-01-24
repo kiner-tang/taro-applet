@@ -1,7 +1,7 @@
 import {
   login,
   setStorageSync
-} from '@tarojs/taro';
+} from "@tarojs/taro";
 import { wxCodeStorageKey } from "@/core/code";
 
 /**
@@ -14,7 +14,7 @@ export function doWxLogin() {
       if (res.code) {
         setStorageSync(wxCodeStorageKey, res.code);
       } else {
-        console.log('登录失败！' + res.errMsg);
+        console.log("登录失败！" + res.errMsg);
       }
     }
   });

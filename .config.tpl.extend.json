@@ -1,0 +1,29 @@
+{
+  "extend": {
+    "prompt": [
+      {
+        "type": "input",
+        "message": "请输入项目名称",
+        "name": "name",
+        "default": "taro-weapp"
+      },
+      {
+        "type": "input",
+        "message": "请输入项目版本号",
+        "name": "version",
+        "default": "1.0.0"
+      },
+      {
+        "type": "input",
+        "message": "请输入项目描述",
+        "name": "description",
+        "default": "基于React-Typescript-MobX的小程序模版项目"
+      }
+    ],
+    "updatePkg": {
+      "name": "{{name}}",
+      "version": "{{version}}",
+      "description": "{{description}}"
+    }
+  }
+}
